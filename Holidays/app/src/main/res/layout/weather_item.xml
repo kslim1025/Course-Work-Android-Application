@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector">
+
+
+    <TextView
+        android:id="@+id/text_view_weather_item_1"
+        style="@style/WeatherItem"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:textColor="#212121"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dsssdsdsdsd"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_view_weather_item_2"
+        style="@style/WeatherItem"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginBottom="8sp"
+        android:fontFamily="monospace"
+        android:textColor="#757575"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_weather_item_1"
+        tools:text="dsssdsdsdsd" />
+
+    <ImageView
+        android:id="@+id/id12"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_share_post_symbol"
+        app:layout_constraintBottom_toTopOf="@id/id122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/id122"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_weather_item_2"
+        android:background="@color/colorAccent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

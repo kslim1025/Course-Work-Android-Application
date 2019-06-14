@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ede7f6">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Country:"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_below="@+id/txt1"
+        android:id="@+id/editText_main_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="US"
+        android:layout_margin="20sp"
+        android:hint="UA"  />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_below="@+id/editText_main_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text = "Year:"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editText_main_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        tools:text="2019"
+        android:layout_margin="20sp"
+        android:hint="2019"/>
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH HOLIDAYS"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/editText_main_year"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ede7f6"
+    tools:context=".RecycleViewItemActivity"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="99dp"
+    tools:layout_editor_absoluteY="76dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_recycleViewItem_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="#212121"
+            android:textSize="42sp"
+            app:layout_constraintEnd_toEndOf="@id/id1"
+            app:layout_constraintStart_toStartOf="@id/id1"
+            app:layout_constraintTop_toTopOf="@id/id1"
+            tools:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_recycleViewItem_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="#757575"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="@id/id1"
+            app:layout_constraintStart_toStartOf="@id/id1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_recycleViewItem_1"
+            tools:text="TextView" />
+        <TextView
+            android:id="@+id/textView_recycleViewItem_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="#757575"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="@id/id1"
+            app:layout_constraintStart_toStartOf="@id/id1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_recycleViewItem_2"
+            tools:text="TextView" />
+        <TextView
+            android:id="@+id/textView_recycleViewItem_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="#757575"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="@id/id1"
+            app:layout_constraintStart_toStartOf="@id/id1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_recycleViewItem_3"
+            tools:text="TextView" />
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/id1"
+            app:layout_constraintStart_toStartOf="@id/id1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_recycleViewItem_4"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
